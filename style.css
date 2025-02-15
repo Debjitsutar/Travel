@@ -1,0 +1,604 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    font-family: "Lato", serif;
+  }
+  
+
+#navbar{
+    background: #f9f9f9;
+
+}
+#logo{
+    font-size: 36px;
+    font-weight: 700;
+    color: black;
+    text-shadow: black;
+    margin-bottom: 5px;
+}
+#logo span{
+    color: #ffa500;
+}
+.navbar-toggler span{
+    color: rgba(240, 215, 85, 0.947);
+}
+.navbar-nav{
+    margin-left: 20px;
+}
+.nav-item .nav-link{
+    font-size: 16px;
+    font-weight: 550;
+    color: black;
+    letter-spacing: 1px;
+    border-radius: 3px;
+    transition: 0.5s ease;
+}
+.nav-item .nav-link:hover{
+    background: #ffa500;
+    color: white;
+}
+#navbar form button{
+    background: orange;
+    color: white;
+    border: none;
+}
+.Home {
+    width: 100%;
+    height: 80vh;
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url("Mountain_Landscape_HD.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+ }
+
+ .Home .content{
+    text-align: center;
+    padding-top: 200px;
+ }
+ .Home .content h5{
+    color: white;
+    font-size: 35px;
+    font-weight: 500;
+    text-shadow: 0px 1px 1px black;
+ }
+ .change-content::after {
+    color: #ffa500;
+    text-shadow: 0px 1px 1px black;
+    animation: changetxt 10s infinite linear;
+    content: "France"; /* Default content */
+}
+@keyframes changetxt {
+    0%{ content: "Spain"; opacity: 1; }
+    10%{ content: "Camp nou"; opacity: 1; }
+    20%{ content: "Sevilla"; opacity: 1; }
+    30%{ content: "Barcelona"; opacity: 1; }
+    40%{ content: "Madrid"; opacity: 1; }
+    50%{ content: "Munich"; opacity: 1; }
+    60%{ content: "France"; opacity: 1; }
+    70%{ content: "Italy"; opacity: 1; }
+    80%{ content: "Japan"; opacity: 1; }
+    90% { content: "Greece"; opacity: 1; }
+    100% { content: "Wembley"; opacity: 1; }
+}
+
+ .Home .content h1{
+    color: white;
+    font-size: 70px;
+    font-weight: 600;
+    text-shadow: 0px 1px 1px black;
+    margin-top: 5px;
+ }
+ .Home .content p{
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    text-shadow: 0px 1px 1px black;
+    margin-top: 5px;
+    margin-bottom: 30px;
+ }
+ .Home .content a{
+    padding: 10px;
+    background: white;
+    color: black;
+    letter-spacing: 2px;
+    font-weight: 550;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.5s;
+ }
+
+ .Home .content a:hover{
+    background :#ffa500;
+    color: beige;
+ }
+ @media(max-width:850px)
+ {
+    .Home
+    {
+        background-position: 50%;
+    }
+ }
+ @media(max-width:850px)
+ {
+    .Home .content h5
+    {
+        font-size: 25px;
+    }
+    .Home .content h1{
+        font-size: 35px;
+    }
+    .Home .content p{
+        font-size: 13px;
+    }
+ }
+
+ .book {
+  background: #f9f9f9;
+  padding: 60px;
+}
+
+.main-txt h1 {
+  text-align: center;
+  font-weight: 600;
+  color: #333;
+}
+
+.main-txt h1 span {
+  color: #ffa500;
+}
+
+.book .card {
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.book .row {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.book form input {
+  padding: 10px;
+  color: black;
+  border: 1px solid #ccc;
+  outline: none;
+  font-size: 15px;
+  border-radius: 10px;
+  box-shadow: 0 5px 5px -6px rgba(0, 0, 0, 0.3);
+}
+
+.book form textarea {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  resize: none;
+  height: 200px;
+  box-shadow: 0 5px 5px -6px rgba(0, 0, 0, 0.3);
+}
+
+.book .submit {
+  width: 160px;
+  font-size: 16px;
+  font-weight: 550;
+  background: #ffa500;
+  color: white;
+  margin-top: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: width 0.5s;
+}
+
+.book .submit:hover {
+  width: 170px;
+}
+.book .row {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.book .people {
+  flex: 1;
+}
+
+.book .card {
+  width: 100%;
+}
+
+.book form {
+  padding-top: 5vh;
+}
+
+.book .card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  margin-top: 0;
+}
+.Packages {
+  margin-top: 5vh;
+  margin-bottom: vvh;
+  margin-left: 15vh;
+  margin-right: 10vh;
+  background: #f9f9f9;
+}
+
+.Packages .main-txt h1 {
+  text-align: center;
+  font-weight: 600;
+  color: #333;
+  font-size: 40px;
+  margin-bottom: 40px;
+}
+
+.Packages .main-txt h1 span {
+  color: #ffa500;
+}
+
+.Packages .row {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.Packages .card {
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  background: white;
+  transition: transform 0.3s;
+}
+
+.Packages .card:hover {
+  transform: scale(1.05);
+}
+
+.Packages .card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.Packages .card-body {
+  padding: 15px;
+  text-align: center;
+}
+
+.Packages .card-body h3 {
+  color: #333;
+  font-size: 24px;
+  font-weight: 600;
+  margin: 10px 0;
+}
+
+.Packages .card-body p {
+  color: #666;
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.Packages .card-body .star {
+  color: #ffa500;
+  margin-bottom: 10px;
+}
+
+.Packages .card-body .peeps {
+  color: #ffa500;
+  font-size: 20px;
+}
+
+.Packages .card-body h6 {
+  color: #333;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.Packages .card-body a {
+  display: inline-block;
+  padding: 8px 15px;
+  background: #ffa500;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s;
+}
+
+.Packages .card-body a:hover {
+  background: #ff8c00;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .Packages .row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .Packages .card {
+    width: 90%;
+  }
+}
+
+/* Section Services*/
+
+.services {
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  margin-left: 15vh;
+  margin-right: 10vh;
+  background: #f9f9f9;
+}
+
+.services .main-txt h1 {
+  text-align: center;
+  font-weight: 600;
+  color: #333;
+  font-size: 40px;
+  margin-bottom: 40px;
+}
+
+.services .main-txt h1 span {
+  color: #ffa500;
+}
+
+.services .row {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.services .card {
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  background: white;
+  transition: transform 0.3s;
+}
+
+.services .card:hover {
+  transform: scale(1.05);
+}
+
+.services .card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  text-align: center;
+}
+
+.services .card i {
+  text-align: center;
+  margin-top: 7vh;
+  font-size: 40px;
+  color: #ffa500;
+  margin-bottom: 20px; /* Add spacing between the icon and the text */
+}
+
+.services .card-body h3 {
+  color: #333;
+  font-size: 24px;
+  font-weight: 600;
+  margin: 10px 0;
+}
+
+.services .card-body p {
+  color: #666;
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.services .card-body a {
+  display: inline-block;
+  padding: 8px 15px;
+  background: #ffa500;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s;
+}
+
+.services .card-body a:hover {
+  background: #ff8c00;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .services .row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .services .card {
+    width: 90%;
+  }
+}
+/* Gallery Section */
+.gallery {
+  background: #f9f9f9;
+  padding: 50px 0;
+  padding-top: 10px;
+}
+
+.gallery .main-txt h1 {
+  text-align: center;
+  margin-top: 0;
+  font-weight: 600;
+  color: #333;
+  font-size: 40px;
+  margin-bottom: 40px;
+}
+
+.gallery .main-txt h1 span {
+  color: #ffa500;
+}
+
+/* Slideshow Container */
+.slideshow-container {
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+/* Hide the radio buttons */
+input[type="radio"] {
+  display: none;
+}
+
+/* Slides */
+.slides {
+  display: flex;
+  transition: transform 1s ease-in-out;
+}
+
+.slide {
+  min-width: 100%;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.slide img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Automatically transition through slides */
+input#slide1:checked ~ .slides {
+  transform: translateX(0);
+}
+
+input#slide2:checked ~ .slides {
+  transform: translateX(-100%);
+}
+
+input#slide3:checked ~ .slides {
+  transform: translateX(-200%);
+}
+
+input#slide4:checked ~ .slides {
+  transform: translateX(-300%);
+}
+
+/* Navigation Buttons (optional) */
+.navigation label {
+  position: absolute;
+  top: 50%;
+  font-size: 30px;
+  color: rgba(0, 0, 0, 0.7);
+  cursor: pointer;
+  z-index: 10;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  transform: translateY(-50%);
+}
+
+.navigation .prev {
+  left: 10px;
+}
+
+.navigation .next {
+  right: 10px;
+}
+/* Consistent hover effect for Gallery cards */
+.gallery .card:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+
+/*About start*/
+
+.About{
+  margin-top: 50px;
+  background: #f9f9f9;
+}
+.About .card{
+  border-radius: 10px;
+
+}
+.About .card img{
+  border-radius: 10px;
+}
+.About h2{
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.About p{
+  font-weight: 500;
+}
+#About-us{
+  width: 150px;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+  background: #ffa500;
+  color: white;
+  letter-spacing: 2px;
+  font-weight: 550;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+#About-us:hover{
+  width: 170px;
+}
+
+@media (max-width:765px)
+{
+  .About{
+    padding: 0;
+  }
+}
+
+/*Footer */
+
+#footer{
+  width: 100%;
+  margin-top: 150px;
+  text-align: center;
+  background: #f9f9f9;
+}
+#footer h1{
+  font-weight: 600;
+  padding-top: 30px;
+  text-shadow: black;
+}
+#footer h1 span{
+  color: #ffa500;
+}
+.social-links i{
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 20px;
+  background: black;
+  color: white;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+.social-links i:hover{
+  background: #ffa500;
+}
+
